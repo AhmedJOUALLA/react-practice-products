@@ -8,7 +8,7 @@ const ProductDetails = () => {
   return (
     <div>
       <h1>Details</h1>
-      <img src={p.images[0]} alt="" width="200" />
+      <img src={p.images[0]}  width="200" />
       <h1>{p.title}</h1>
       <h3>{p.description}</h3>
       <h4>{p.price}$</h4>

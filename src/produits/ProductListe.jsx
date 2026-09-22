@@ -19,13 +19,17 @@ const ProductListe = ({ data }) => {
       <select onChange={(e) => setSelectedCat(e.target.value)}>
         <option value="ALL">ALL</option>
         {cat.map((elm) => (
-          <option value={elm} key={elm}>{elm}</option>
+          <option value={elm} key={elm}>
+            {elm}
+          </option>
         ))}
       </select>
-      {filtredData.map((elm) => (
-        <Product key={elm.id} p={elm} />
-      ))}
+      <div className="product-list">
+        {filtredData.map((elm) => (
+          <Product key={elm.id} p={elm} />
+        ))}
+      </div>
     </div>
   );
 };
-export default ProductListe ;
+export default ProductListe;
