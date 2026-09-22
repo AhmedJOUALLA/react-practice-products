@@ -15,8 +15,8 @@ const ProductListe = ({ data }) => {
 
   return (
     <div>
-      <input type="text" onChange={(e) => setSearch(e.target.value)} />
-      <select onChange={(e) => setSelectedCat(e.target.value)}>
+      <input className="search-input" type="text" onChange={(e) => setSearch(e.target.value)} />
+      <select className="select-cat" onChange={(e) => setSelectedCat(e.target.value)}>
         <option value="ALL">ALL</option>
         {cat.map((elm) => (
           <option value={elm} key={elm}>
